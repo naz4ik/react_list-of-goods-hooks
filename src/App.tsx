@@ -17,7 +17,7 @@ export const goodsFromServer = [
 ];
 
 function sortingGoods(goods: string[], field: string, isReversed: boolean) {
-  const sorted = [...goodsFromServer];
+  const sorted = [...goods];
 
   if (field === 'Sort alphabetically') {
     sorted.sort((a, b) => a.localeCompare(b));
